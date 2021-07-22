@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   resources :users
   resources :organisations
 
+  root :to => "organisations#index"
+
   # EXAMPLE JSON ROUTE WITH API NAMESPACE
   # namespace :api do
   #   get "/photos" => "photos#index"

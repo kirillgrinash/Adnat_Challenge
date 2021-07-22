@@ -20,6 +20,10 @@ class OrganisationsController < ApplicationController
     @organisation.save
   end
 
+  def edit
+    @organisation = Organisation.find(params[:id])
+  end
+
   def user_params
     params.require(:organisation).permit(:name, :hourly_rate)
   end
