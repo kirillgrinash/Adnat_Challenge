@@ -6,3 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Organisation.create(name: "ABC", hourly_rate: 15.5)
+Organisation.create(name: "Darth Group", hourly_rate: 66)
+Organisation.create(name: "Fallout", hourly_rate: 101)

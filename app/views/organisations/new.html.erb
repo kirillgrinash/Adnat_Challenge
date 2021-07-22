@@ -1,0 +1,15 @@
+<div>
+  <h1>Organisations</h1>
+  <table>
+    <% @organisation.each do |org| %>
+    <tr>
+      <td><%=org.name =%></td>
+      <td><%=org.hourly_rate =%></td>
+      <td><%= link_to 'Edit', edit_organisation_path(org) =%></td>
+      <td><%= link_to 'Delete', organisation_path(org),
+      method: :delete,
+      data: {confirm: 'are you sure?'} =%></td>
+    </tr>
+    <% end %>
+  </table>
+</div>

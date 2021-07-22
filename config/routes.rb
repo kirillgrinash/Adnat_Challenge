@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   get 'signup' => 'users#new'
   resources :users
+  resources :organisations
 
   # EXAMPLE JSON ROUTE WITH API NAMESPACE
   # namespace :api do
